@@ -45,9 +45,19 @@ While the Logistic Regression model provided a stable baseline accuracy, the **D
 5.  **Evaluation:**
     * Confusion Matrix analysis.
     * Feature Importance extraction.
+ ## 📊 Model Performance & Conclusion
+I trained three models to predict customer churn:
+1.  **Logistic Regression:** 70.5% Accuracy (Winner 🏆)
+2.  **Random Forest:** 70.0% Accuracy
+3.  **Decision Tree:** 64.0% Accuracy
+
+**Conclusion:**
+The **Logistic Regression** model performed best. This suggests that the relationship between customer features (Age, Geography) and Churn is primarily **linear** (additive). 
+
+While the Random Forest is a more powerful algorithm, it added complexity without improving accuracy for this specific dataset. Therefore, **Logistic Regression is the recommended model for deployment** due to its computational efficiency and interpretability.
 
 ## 🚀 Future Scope
-* **Model Improvement:** Implement **Random Forest** or **XGBoost** to improve prediction accuracy by reducing the variance of the single Decision Tree.
+* **Model Improvement:** Implement**XGBoost** to improve prediction accuracy by reducing the variance of the single Decision Tree.
 * **Hyperparameter Tuning:** Use `GridSearchCV` to find the optimal depth for the tree models.
 
 ## 📬 Contact
